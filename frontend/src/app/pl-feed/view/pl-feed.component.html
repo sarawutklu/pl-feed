@@ -1,8 +1,73 @@
-<p>
-  pl-feed works!
-</p>
-<div (scroll)="onScroll($event)"  style="overflow: scroll; height: 500px;">
-  <div class="post"*ngFor="let item of [].constructor(20)">
+<!-- <div (scroll)="onScroll($event)" style="overflow: scroll; height: 500px;">
+  <div class="post" *ngFor="let item of [].constructor(20)">
     <h1>post</h1>
+  </div>
+</div> -->
+
+<div class="info">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card">
+        <img class="card-img-top"
+          src="https://lh3.googleusercontent.com/proxy/yqZybPEFBeJL4_hkpDNL744MiMcENQxcG-b6SfUtgglYJWC4wstapUN2lnK5ziyZkOTocyjzr5-WIKukqgf2mNhWCMzph4jxHB0c"
+          alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Cras justo odio</li>
+          <li class="list-group-item">Dapibus ac facilisis in</li>
+          <li class="list-group-item">Vestibulum at eros</li>
+        </ul>
+        <div class="card-body">
+          <a href="#" class="card-link">Card link</a>
+          <a href="#" class="card-link">Another link</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="feed bg-success text-center" *ngIf="postList">
+  <div class="post"  *ngFor="let item of postList">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+          content.</p>
+        <a href="#" class="card-link">Card link</a>
+        <a href="#" class="card-link">Another link</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="chat">
+  <div class="row">
+    <div class="col-md-12">
+      <ul class="list-group">
+        <li class="list-group-item">Cras justo odio</li>
+        <li class="list-group-item">Dapibus ac facilisis in</li>
+        <li class="list-group-item">Morbi leo risus</li>
+        <li class="list-group-item">Porta ac consectetur ac</li>
+        <li class="list-group-item">Vestibulum at eros</li>
+        <li class="list-group-item">Cras justo odio</li>
+        <li class="list-group-item">Dapibus ac facilisis in</li>
+        <li class="list-group-item">Morbi leo risus</li>
+        <li class="list-group-item">Porta ac consectetur ac</li>
+        <li class="list-group-item">Vestibulum at eros</li>
+        <li class="list-group-item">Cras justo odio</li>
+        <li class="list-group-item">Dapibus ac facilisis in</li>
+        <li class="list-group-item">Morbi leo risus</li>
+        <li class="list-group-item">Porta ac consectetur ac</li>
+        <li class="list-group-item">Vestibulum at eros</li>
+        <li class="list-group-item">Cras justo odio</li>
+        <li class="list-group-item">Dapibus ac facilisis in</li>
+        <li class="list-group-item">Morbi leo risus</li>
+        <li class="list-group-item">Porta ac consectetur ac</li>
+        <li class="list-group-item">Vestibulum at eros</li>
+      </ul>
+    </div>
   </div>
 </div>

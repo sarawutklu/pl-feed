@@ -1,0 +1,40 @@
+.feed {
+ 
+}
+.post{
+    max-width: 53%;
+    margin: auto;
+}
+
+.info {
+    width: 350px;
+    height: 100%;
+    background: white;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 60;
+    transition: margin-left 0.3s;
+    margin-top: 61px;
+}
+.chat{
+    width: 350px;
+    height: 100%;
+    background: white;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    z-index: 60;
+    transition: margin-left 0.3s;
+    margin-top: 61px;
+}
+html {
+    overflow: -moz-scrollbars-vertical;
+    overflow-y: scroll;
+}
+.card{
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    position: inherit;
+}

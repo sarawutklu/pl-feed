@@ -25,9 +25,9 @@ public class FeedController {
     private FeedService feedService;
     
    
-    @GetMapping("{id}/{page}")
-    public ResponseEntity<List<Post>> getFeed(@PathVariable("id") String id, @PathVariable("page") int page ) {
-        List<Post> result = feedService.getFeed(id, page);
+    @GetMapping("{page}")
+    public ResponseEntity<List<Post>> getFeed(@PathVariable("page") int page) {
+        List<Post> result = feedService.getFeed("311e22e4-7138-4b14-a966-b6e1bfa69080", page);
         return new ResponseEntity<List<Post>>(result, HttpStatus.OK);
     }
 
