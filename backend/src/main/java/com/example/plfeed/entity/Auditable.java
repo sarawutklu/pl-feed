@@ -15,7 +15,7 @@ import javax.persistence.MappedSuperclass;
 import java.util.Date;
 
 
-@Getter(AccessLevel.PROTECTED)
+@Getter(AccessLevel.PUBLIC)
 @Setter(AccessLevel.PROTECTED)
 @MappedSuperclass
 @EntityListeners(AuditingEntityListener.class)
